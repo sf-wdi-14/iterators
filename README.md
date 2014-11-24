@@ -9,4 +9,3 @@ To get set up, you need to
 1. Write tests for each file in `/test` (files are prepared)
 2. Write the methods that make these tests pass (check by running `$ mocha`)
 3. Once done, push to your own branch (named after your first name) of the iterators repository
-
