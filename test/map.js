@@ -13,17 +13,7 @@ describe ('#map()', function() {
 		expect(JSON.stringify(result)).to.equal('[2,3,4]');
 	});
 });
-
-var map = function(array, callback) {
-	for (var i = 0; i < array.length; i++) {
-		sum = 0;
-		sum = array[i] + callback;
-		array[i] = sum;
-	}
-	return array;
-}
-
-/* correct answer 
+ 
 var map = function(array, callback) {
 	var results = [];
 
@@ -36,4 +26,3 @@ var map = function(array, callback) {
 map([3,4,5], function(a) {
 	return a *= 3;
 })
-*/
