@@ -10,15 +10,25 @@ describe('#uniq()', function (){
 	})
 });
 
-function uniq (array) {
-	array.sort();
-	var newArray = [array[0]];
-	var holder;
-	for (var i = 0; i < array.length; i++) {
-		if (array[i]!==newArray[i]) {
-			newArray.push(array[i]);
-		}
+var uniq = function (arr){
+	for (var i = 0; i < arr.length; i++) {
+		for (var j = i+1; j < arr.length; j++) {
+			if(arr[i] === arr[j]){
+				
+			}
+		};
 	};
-	console.log(newArray);
-	return array;
 }
+
+
+// function uniq (array) {
+// 	array.sort();
+// 	var newArray = [array[0]];
+// 	for (var i = 0; i < array.length; i++) {
+// 		if (array[i]!==newArray[i]) {
+// 			newArray.push(array[i]);
+// 		}
+// 	};
+// 	console.log(newArray);
+// 	return array;
+// }
