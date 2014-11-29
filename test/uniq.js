@@ -12,15 +12,11 @@ describe('#uniq()', function() {
 
 var uniq = function(array) {
 	var uniqArray = [];
-	var emptyString = "";
 	for (var i = 0, len = array.length; i < len; i++) {
-		emptyString = array[i];
-		if (array[i] !== emptyString) {
+		if (array[i] !== array[i-1]) {
 			uniqArray.push(array[i]);
 		};
 	};
 	uniqArray = JSON.stringify(uniqArray);
 	return uniqArray;
 };
-
-// Can't figure this one out :'(
